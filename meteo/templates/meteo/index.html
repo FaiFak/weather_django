@@ -1,0 +1,15 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link rel="stylesheet" href="https://cdn.simplecss.org/simple.min.css">
+    <meta charset="UTF-8">
+    <title>Weather</title>
+</head>
+<body>
+<h1>Погода в {{ country }} - {{ city }}:</h1>
+<h2>Температура: {{ temp }} &#8451</h2> <h2>Облачность: {{ cloud_cover }}%</h2>
+
+<a href="{% url 'temp_somewhere' %}">Погода в случайном городе</a>
+<a href="{% url 'temp_here' %}">Погода в своём городе</a>
+</body>
+</html>
